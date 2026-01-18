@@ -28,5 +28,7 @@
 		</property>
 		<mapping class="entities.User"/>
 		<mapping class="entities.Profile"/>
+		<mapping class="entities.Employee"/>
+		<mapping class="entities.Department"/>
 	</session-factory>
 </hibernate-configuration><?xml version="1.0" encoding="UTF-8"?>

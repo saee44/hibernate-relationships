@@ -2,8 +2,8 @@ package entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
 import jakarta.persistence.OneToOne;
+ //one to one 
 
 @Entity
 public class User {
@@ -11,8 +11,7 @@ public class User {
 		int id;
 		String name;
 		
-		@OneToOne
-		@JoinColumn(name="profile_id")
+		@OneToOne(mappedBy = "user")
 		Profile profile;
 		
 		public User(int id,String name,Profile profile){
